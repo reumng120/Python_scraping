@@ -1,19 +1,23 @@
 # Learning how to book a meeting on Zoom with Python Selenium.
 
-This sample practices the selenium API by booking a meeting on Zoom. Don't do any illegal things.
+This sample practices the selenium API by booking a meeting on Zoom and testing on the macOS platform.
+Don't do any illegal things.
 
 ## Setup selenium and use the chromedriver. 
 Check your chrome browser version and download the driver [here](https://chromedriver.chromium.org/downloads).
 ```
-driver = webdriver.Chrome(options=options, executable_path=r'%s' % a_path)
+path = /your_driver_path/chromedriver
+driver = webdriver.Chrome(options=options, executable_path=r'%s' % path)
 driver.set_window_size(1920, 1080)
 ```
 
 ## Input account and password.
 ```
+# Use ID to input account.
 WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, "login_id"))).click()
 WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, "login_id"))).send_keys(account)
 
+# Use ID to input password
 WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, "login_pwd"))).click()
 WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, "login_pwd"))).send_keys(password)
 ```
