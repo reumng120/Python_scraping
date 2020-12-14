@@ -1,6 +1,6 @@
 # Learning how to book a meeting on Zoom with Python Selenium.
 
-This sample practices the selenium API by booking a meeting on Zoom and testing on the macOS platform.\n
+This sample practices the selenium API by booking a meeting on Zoom and testing on the macOS platform.<br>
 Don't do any illegal things.
 
 ## Setup selenium and use the chromedriver. 
