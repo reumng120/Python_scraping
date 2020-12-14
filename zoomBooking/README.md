@@ -34,8 +34,10 @@ WebDriverWait(self.driver,90).until(EC.element_to_be_clickable((By.XPATH, "//a[c
 # Input your meething topic
 WebDriverWait(self.driver,90).until(EC.element_to_be_clickable((By.XPATH, "//input[@name='topic']"))).click()
 WebDriverWait(self.driver,90).until(EC.element_to_be_clickable((By.XPATH, "//input[@name='topic']"))).send_keys(meeting_topic)
+```
 
-# Submit the booking
+```
+## Submit the booking
 WebDriverWait(self.driver,90).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
 ```
 
